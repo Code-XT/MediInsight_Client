@@ -21,6 +21,7 @@ import ReportComponent from "@/components/ReportComponent";
 // import { toast } from "sonner";
 import { useToast } from "@/components/ui/use-toast";
 import ChatComponent from "@/components/chatcomponent";
+import Image from "next/image";
 
 const Home = () => {
   const { toast } = useToast();
@@ -36,11 +37,9 @@ const Home = () => {
   return (
     <div className="grid h-screen w-full">
       <div className="flex flex-col">
-        <header className="sticky top-0 z-10 flex h-[57px] bg-background items-center gap-1 border-b px-4">
-          <h1 className="text-xl font-semibold text-[#D90013]">
-            <span>Medi</span>
-            <span className="text-xl font-semibold text-white">Insight</span>
-          </h1>
+        <header className="sticky top-0 z-10 flex h-[67px] bg-background items-center gap-1 border-b px-4">
+          <Image src="/MediInsight.png" alt="logo" width={150} height={150} />
+
           <div className="w-full flex flex-row justify-end gap-2">
             <ModeToggle />
             <Drawer>
