@@ -143,7 +143,7 @@ const ReportComponent = ({ onReportConfirmation }: Props) => {
   }
 
   return (
-    <div className="grid w-full items-start gap-6 overflow-auto px-6 bg-gray-50 dark:bg-gray-900 rounded-lg shadow-lg">
+    <div className="grid w-full items-start gap-6 overflow-auto px-6 py-3 bg-gray-50 dark:bg-gray-900 rounded-lg shadow-lg">
       <fieldset className="relative grid gap-6 rounded-xl border border-gray-200 dark:border-gray-700 p-6 bg-white dark:bg-gray-800 shadow-sm">
         <legend className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-4">
           Report Details
@@ -158,12 +158,12 @@ const ReportComponent = ({ onReportConfirmation }: Props) => {
         <Input
           type="file"
           onChange={handleReportSelection}
-          className="border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-100 dark:bg-gray-700"
+          className="border border-gray-300 dark:border-gray-600 rounded-lg p-3 bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition ease-in-out duration-150"
         />
 
         <Button
           onClick={extractDetails}
-          className="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 rounded-lg transition duration-150"
+          className="mt-4 w-full bg-white hover:bg-slate-300 text-gray-800 font-medium py-2 rounded-lg transition duration-150"
         >
           1. Upload File
         </Button>

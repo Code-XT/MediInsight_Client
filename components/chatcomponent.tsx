@@ -87,7 +87,7 @@ const ChatComponent = ({ reportData }: Props) => {
             disabled={isLoading}
             type="submit"
             size="sm"
-            className="ml-auto bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-all duration-150"
+            className="ml-auto bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md transition-all duration-150"
           >
             {isLoading ? "Analysing..." : "3. Ask"}
             {isLoading ? (

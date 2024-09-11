@@ -38,7 +38,16 @@ const Home = () => {
     <div className="grid h-screen w-full">
       <div className="flex flex-col">
         <header className="sticky top-0 z-10 flex h-[67px] bg-background items-center gap-1 border-b px-4">
-          <Image src="/MediInsight.png" alt="logo" width={150} height={150} />
+          <div className="flex items-center justify-center">
+            <h1 className="text-xl font-bold">
+              <span className=" px-4 py-1 rounded-l-full text-white bg-red-600">
+                Medi
+              </span>
+              <span className=" px-4 py-1 rounded-r-full text-red-600 bg-white">
+                Insight
+              </span>
+            </h1>
+          </div>
 
           <div className="w-full flex flex-row justify-end gap-2">
             <ModeToggle />
